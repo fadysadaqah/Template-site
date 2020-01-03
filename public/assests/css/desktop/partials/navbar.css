@@ -1,0 +1,126 @@
+.desktop-navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: white;
+  z-index: 555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+.desktop-navbar .navbar-container {
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.desktop-navbar .navbar-container .n-left, .desktop-navbar .navbar-container .n-right {
+  display: flex;
+  align-items: center;
+}
+.desktop-navbar .navbar-container .n-left .text-logo {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  font-family: Righteous;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.desktop-navbar .navbar-container .n-left .text-logo:hover {
+  transition: 1000ms;
+  transform: scale(1.1);
+}
+.desktop-navbar .navbar-container .n-right .notifications {
+  display: flex;
+  align-items: center;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .notification-container {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .notification-container:hover {
+  cursor: pointer;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .message-num, .desktop-navbar .navbar-container .n-right .notifications .dropdown .bell-num {
+  background: red;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border: 2px solid white;
+  box-sizing: content-box;
+  margin-bottom: -9px;
+  z-index: 5555;
+  font-family: roboto;
+  font-weight: 800;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown i {
+  margin-right: 7px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .msg-dropdown-div {
+  padding: 0;
+  width: 430px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .msg-dropdown-div .msg-dd-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 7px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .msg-dropdown-div .msg-dd-header .left {
+  font-size: 12px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .notification-dropdown-div {
+  padding: 0;
+  width: 330px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .notification-dropdown-div .not-dd-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 7px;
+}
+.desktop-navbar .navbar-container .n-right .notifications .dropdown .notification-dropdown-div .not-dd-header .left {
+  font-size: 12px;
+}
+.desktop-navbar .navbar-container .n-right .owner-info {
+  margin: 0 10PX;
+  display: flex;
+  align-items: center;
+}
+.desktop-navbar .navbar-container .n-right .owner-info .profile-img {
+  position: relative;
+  margin-right: 10px;
+}
+.desktop-navbar .navbar-container .n-right .owner-info .profile-img .user-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.desktop-navbar .navbar-container .n-right .owner-info .profile-img .user-pic-border {
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 1px;
+}
+.desktop-navbar .navbar-container .n-right .owner-info .profile-name {
+  font-family: roboto;
+  font-weight: 500;
+}
+
+.desktop-navbar a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=navbar.css.map */

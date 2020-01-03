@@ -1,0 +1,185 @@
+<%- include ("partials/header1.ejs")%>
+<%- include ("partials/header2.ejs")%>
+<link rel="stylesheet" href="assests/css/mobile/home.css">
+    <div class="home-main">
+        <div class="main-text">
+            Mo7draty
+            <div class='description'>First website built for college students</div>
+        </div>
+        <div class="register">
+            <div class="signup-form">
+                <div class="text-center head">Register</div>
+                <small class="text-center d-block">To First Website build for college students</small>
+                <form action="/signup" method="post">
+                    <input name="email" type="email" class="form-control" placeholder="First Name">
+                    <input name="email" type="email" class="form-control" placeholder="Last Name">
+                    <input name="email" type="email" class="form-control" placeholder="Email address" autocomplete>
+                    <input name="password_a" type="password" class="form-control" placeholder="Password" autocomplete>
+                    <input name="password_b" type="password" class="form-control" placeholder="Confirm password"
+                        autocomplete>
+                    <button class="btn btn-primary sign-up-btn">Create Account</button>
+                </form>
+                
+                <!-- ###################### -->
+                <hr class="or-hr">
+                <div class="or">or continue with</div>
+                
+                <div class="d-flex flex-column align-items-center">
+                    <div class="continue-with-div btn-group">
+                        <button class="btn google-btn">
+                            <?xml version="1.0" encoding="iso-8859-1"?>
+                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+                            	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+                            	C103.821,274.792,107.225,292.797,113.47,309.408z" />
+                                <path style="fill:#518EF8;" d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+                            	c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+                            	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z" />
+                                <path style="fill:#28B446;" d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+                            	c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+                            	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z" />
+                                <path style="fill:#F14336;" d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+                            	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+                            	C318.115,0,375.068,22.126,419.404,58.936z" />
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+
+                            Google</button>
+                        <button class="btn facebook-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                            </svg>
+                            Facebook</button>
+                    </div>
+                </div>
+                <!-- ###################### -->
+                <div class="text-center">
+                    <span class="text-muted sub-form-text">Already have an account?</span>
+                    <span class="signin-btn form-flip-btn sub-form-text">Sign in</span>
+                </div>
+            </div>
+            <!-- ########################################################################################## -->
+            <div class="signin-form">
+                <div class="text-center head">Sign in</div>
+                <small class="text-center d-block">To First Website build for x topic</small>
+                <form action="/signin" method="post">
+                    <input name="email" type="email" class="form-control" placeholder="Email address">
+                    <input name="password_a" type="password" class="form-control" placeholder="Password">
+                    <button class="btn btn-primary sign-in-btn">Sign in</button>
+                </form>
+                <!-- ###################### -->
+                <hr class="or-hr">
+                <div class="or">or</div>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="continue-with-div btn-group">
+                            <button class="btn google-btn">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+                                                	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+                                                	C103.821,274.792,107.225,292.797,113.47,309.408z" />
+                                    <path style="fill:#518EF8;"
+                                        d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+                                                	c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+                                                	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z" />
+                                    <path style="fill:#28B446;" d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+                                                	c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+                                                	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z" />
+                                    <path style="fill:#F14336;" d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+                                                	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+                                                	C318.115,0,375.068,22.126,419.404,58.936z" />
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                    
+                                Google</button>
+                            <button class="btn facebook-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                                </svg>
+                                Facebook</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ###################### -->
+                <div class="text-center">
+                    <span class="text-muted sub-form-text">Don't have an account?</span>
+                    <span class="signup-btn form-flip-btn sub-form-text">Sign up</span>
+                </div>
+                <div class="text-center">
+                    <span class="form-flip-btn sub-form-text">Forgotten password</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+<script src="assests/js/mobile/home.js"></script>
+<%- include ("partials/footer.ejs")%>

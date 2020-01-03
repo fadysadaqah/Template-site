@@ -1,0 +1,59 @@
+body {
+  background: #e9ebee;
+  font-family: roboto;
+}
+
+.t-main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.t-main-body .t-cover-photo {
+  width: 95%;
+  max-width: 851px;
+}
+.t-main-body .t-cover-photo .t-cover-img {
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+}
+.t-main-body .t-cover-photo .t-profile-and-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+  padding: 0 20px;
+  align-items: center;
+}
+.t-main-body .t-cover-photo .t-avatar {
+  border-radius: 50%;
+  width: 150px;
+  border: 5px solid #e9ebee;
+}
+.t-main-body .t-cover-photo .t-buttons {
+  margin-bottom: 10px;
+  display: flex;
+}
+.t-main-body .t-cover-photo .t-buttons .add-friend-btn {
+  margin-right: 7px;
+}
+.t-main-body .t-cover-photo .t-buttons .t-button {
+  display: flex;
+  align-items: center;
+}
+.t-main-body .t-cover-photo .t-buttons .cover-icons {
+  margin-right: 3px;
+}
+.t-main-body .t-feed {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 851px;
+}
+.t-main-body .t-feed .t-feed-left {
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  width: 321px;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="css/t-main.css">
+<link rel="stylesheet" href="css/item-div.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- ###################################################### -->
+<%
+var first_name = 'Walaa';
+var last_name = 'Derhab';
+var full_name = first_name +' '+last_name;
+var profile_img_url = 'assests/img/walaa.jpg';
+var profile_img_alt = full_name+' profile picture';
+var since = '15 hrs';
+var post_text = 'Hey I am Bellie Ellish and Totam eveniet reiciendis optio laboriosam soluta, nulla voluptatum quasi odio velit laborum sunt atque cumque nihil dolores sint at. Repellendus, maiores, enim ea dolores nam obcaecati iste omnis voluptatum temporibus alias dolorum ipsam voluptates amet tempore itaque harum nemo odit et facilis quae non sit! Neque totam dolor quasi rerum blanditiis perspiciatis nostrum ratione.';
+var post_img = 'assests/img/walaa.jpg'
+%>
+<!-- ###################################################### -->
+    <div class="t-item">
+        <div class="body">
+            <div class="navbar">
+                <div class="left">
+                    <div class="profile-pic">
+                        <div class="border"></div>
+                        <img src="<%=profile_img_url%>" alt="<%=profile_img_alt%>">
+                    </div>
+                    <div class="user-name">
+                        <div class="name"><%=full_name%></div>
+                        <div class="since"><%=since%></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- <i class="fas fa-angle-down"></i> -->
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="content">
+                <p class="post-text"><%=post_text%></p>
+                <img class="post-img" src="<%=post_img%>">
+            </div>
+        </div>
+        <div class="comments">
+            <div class="row-a">
+                
+            </div>
+            <div class="row-b">
+                <div class="like icon-div">
+                    <i class="material-icons">thumb_up</i>
+                    <div class="icon-text">Like</div>
+                </div>
+                <div class="comment icon-div">
+                    <i class="material-icons">mode_comment</i>
+                    <div class="icon-text">Comment</div>
+                </div>
+                <div class="share icon-div">
+                    <i class="material-icons">share</i>
+                    <div class="icon-text">Share</div>
+                </div>
+            </div>
+            <div class="row-c">
+                
+            </div>
+            <div class="row-d">
+                
+            </div>
+        </div>
+    </div>
+

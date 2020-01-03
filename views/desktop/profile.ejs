@@ -1,0 +1,45 @@
+<%- include ("partials/header1.ejs")%>
+<%- include ("partials/header2.ejs")%>
+<%- include ("partials/navbar.ejs")%>
+<link rel="stylesheet" href="assests/css/desktop/main.css">
+<link rel="stylesheet" href="assests/css/desktop/profile.css">
+<link rel="stylesheet" href="assests/css/desktop/partials/profile/feed-left.css">
+<link rel="stylesheet" href="assests/css/desktop/partials/item-div.css">
+<!-- ###################################### -->
+<div class="t-main-body">
+    <div class="t-cover-photo">
+        <img class="t-cover-img"
+            src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/08/facebook-cover.jpg" alt="">
+        <div class="t-profile-and-buttons">
+            <img src="assests/img/walaa.jpg"
+                alt="" class="t-avatar">
+            <div class="t-buttons">
+                <button class="btn btn-light t-button add-friend-btn btn-sm"><i
+                        class="material-icons cover-icons">person_add</i>Add friend</button>
+                <div class="btn-group">
+                    <button class="btn btn-light btn-sm t-button"><i class="material-icons cover-icons">rss_feed</i>follow</button>
+                    <button class="btn btn-light btn-sm t-button"><i class="material-icons cover-icons">message</i>message</button>
+                    <button class="btn btn-light btn-sm t-button"><i class="material-icons ">more_horiz</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************* -->
+    <div class="t-feed">
+        <div class="t-feed-left">
+            <%-include ("partials/profile/feed-left.ejs")%>
+          
+        </div>
+        <div class="t-feed-right">
+            <%-include ("partials/item-div.ejs")%>
+        </div>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<%- include ("partials/footer.ejs")%>

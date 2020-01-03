@@ -1,0 +1,23 @@
+body {
+  padding-top: 60px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.main .feed-left, .main .feed-center, .main .feed-right {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+}
+.main .feed-left {
+  flex-grow: 1;
+}
+.main .feed-right {
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=feed.css.map */

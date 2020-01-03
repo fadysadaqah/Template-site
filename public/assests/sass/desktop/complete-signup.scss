@@ -1,0 +1,72 @@
+iody{
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    }
+.complete-main{
+    padding-top: 50px;
+    margin: auto;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .complete-sub{
+        width: 650px;
+        background: white;
+        border-radius: 10px;
+        margin-top: 100px;
+        box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.2);
+        overflow: hidden;
+        .complete-progress-bar{
+            height: 5px;
+            background-color:#4c8bf5 ;
+        }
+        .section{
+            .section-inner{
+                padding: 12px;
+            }
+        }
+        .s-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // display: none;
+           
+            .s-skip{
+                align-self: flex-end;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                color: rgba($color: #000000, $alpha: 0.7);
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                &:hover .skip-text{
+                    text-decoration: underline;
+                    cursor: pointer;
+                } 
+            }
+            .s-content{
+                margin: 20px 0;
+                .avatar{
+                    width: 170px;
+                    display: flex;
+                    margin: auto;
+                    border-radius: 50%;
+                }
+            }
+            .s-back{
+                color: rgba(48, 48, 228,0.7);
+                font-weight: 500;
+                align-self: flex-start;
+                margin-left: 10px;
+                margin-top: 10px;
+                display: flex;
+                &:hover .back-text{
+                    text-decoration: underline;
+                    cursor: pointer;
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+    <%- include ("partials/header1.ejs")%>
+    <%- include ("partials/header2.ejs")%>
+    <link rel="stylesheet" href="assests/css/desktop/home.css">
+    <div class="home-main">
+        <div class="main-text">
+            <span class="welcome-to">Welcome To </span> Mo7draty
+            
+                    <div class='description'>
+                        First website built for college students
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    
+                </div>
+                <div class="register">
+                    <div class="signup-form">
+                        
+                        <div class="text-center head">Register</div>
+                        <small class="text-center d-block">To First Website build for college students</small>
+                        <form action="/signup" method="post">
+                            <!-- <div class='inputs-group'>
+                                <input name="first_name" type="text" class="form-control" placeholder="First name">
+                                <input name="last_name" type="text" class="form-control" placeholder="Last name">
+                            </div> -->
+                            <input name="email" type="email" class="form-control" placeholder="First Name">
+                            <input name="email" type="email" class="form-control" placeholder="Last Name">
+                            <input name="email" type="email" class="form-control" placeholder="Email address" autocomplete>
+                            <input name="password_a" type="password" class="form-control" placeholder="Password" autocomplete>
+                            <input name="password_b" type="password" class="form-control" placeholder="Confirm password"
+                            autocomplete>
+                            <button class="btn btn-dark">Create Account</button>
+                        </form>
+                        <br>
+                        <!-- ###################### -->
+                        <hr width="100%">
+                        <div class="or">
+                            or
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            
+                            <div class="g-signin2 m-3" data-width="200" data-longtitle="true" data-onsuccess="onSignIn"
+                            data-theme="light"></div>
+                            
+                            <div class="fb-login-button" data-width="250" data-size="large" data-button-type="continue_with"
+                            data-auto-logout-link="false" data-use-continue-as="false"></div>
+                        </div>
+
+                        <!-- ###################### -->
+                        <div class="text-center">
+                            <span class="text-muted">Already have an account?</span>
+                            <span class="signin-btn form-flip-btn">Sign in</span>
+                        </div>
+                    </div>
+                    <!-- ########################################################################################## -->
+                    <div class="signin-form">
+                        
+                        <div class="text-center head">Sign in</div>
+                        <small class="text-center d-block">To First Website build for x topic</small>
+                        <form action="/signin" method="post">
+                            
+                            <input name="email" type="email" class="form-control" placeholder="Email address">
+                            <input name="password_a" type="password" class="form-control" placeholder="Password">
+                    <button class="btn btn-dark">Sign in</button>
+                </form>
+                <br>
+                <!-- ###################### -->
+                <hr width="100%">
+                <div class="or">
+                    or
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    
+                    <div class="g-signin2 m-3" data-width="200" data-longtitle="true" data-onsuccess="onSignIn"
+                        data-theme="light">
+                    </div>
+
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
+                    data-auto-logout-link="false" data-use-continue-as="false"></div>
+                </div>
+                <br>
+                <!-- ###################### -->
+                <div class="text-center">
+                    <span class="text-muted">Don't have an account?</span>
+                    <span class="signup-btn form-flip-btn">Sign up</span>
+                </div>
+                <div class="text-center">
+                    
+                    <span class="form-flip-btn">Forgotten password</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="assests/js/desktop/home.js"></script>
+<%- include ("partials/footer.ejs")%>
